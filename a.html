@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1st project</title>
+
+    <style>
+        .name_cnu{
+            font-size: 10px;
+        }
+        .cnu_yellow{
+            color: yellow;
+        }
+        .sg_intro{
+            display: inline-block;
+        }
+        .sg_logo{
+            color: red;
+        }
+        .btn_register{
+            background-color: white;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <!-- CLASS = 기능 / 이름 -->
+    <!-- span 은 그냥 글자-->
+    <span class="name_cnu">cnu</span>
+    <span class="name_cnu cnu_yello">cnu</span>
+
+    <!-- DIV (DIVISION)-->
+    <div>
+        <div class="sg_intro sg_logo">서강대학교</div>
+        <div class="sg_intro">소개</div>
+        <div class="sg_intro">오시는 길</div>
+    </div>
+    <button class="btn_register" onclick="onRegisterButtonClick()">회원가입</button>
+
+    <script>
+        function onRegisterButtonClick(){
+            //어떤 기능..
+            //btn_register
+            //style
+            //color = blue
+            var tmp = document.querySelector(".btn_register")
+            tmp.style.color = "blue";
+            alert("정상적으로 신청되었습니다.")
+        }
+    </script>
+
+</body>
+</html>
